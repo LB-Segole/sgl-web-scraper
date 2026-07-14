@@ -1,0 +1,80 @@
+# thoughts:
+# i don't know what the fuck i'm doing
+# but let's do it anyway
+
+# what am i making?
+# an intel scraper, that ... check the top.
+
+# tools:
+# requests, beautifulsoup
+
+# modeal:
+# fetches data from one site using request's GET
+# looks at specific data using BeautifulSoup using find()
+# and extracts all the plain text or required information using .get_text()
+# finally, stores the information in a json
+
+# how i'm going to do the above, only God know
+
+# limitations:
+# only runs once a day, every morning, so needs a scheduled time (how is it gonna know?) THIS IS V2
+# no emails, runs once daily
+
+# sites: business tech, Reuters, The Economist and Biztech Magazine
+
+# Data Points:
+# Title
+# Publication date
+# Summary
+# Category
+# Division
+# Company/entity
+# Captial/scale sginal
+# geographic relevance
+# competition proximity
+# action flag (low-key sentiment)
+
+# Trigger:
+# Longevity
+# funding(tech-based)
+# nanotech
+# AGI
+
+# what i might use:
+# import, from, if, else, for loops, variables, dict
+
+# what does a regular old web scraper look like?
+# lets try it
+
+# pseudo code:
+# import library requests (check documents)
+# from beautifulsoup import bs4 (check documents)
+
+# url = https://wikipedia.com
+# get.text(url) fetching text from the url provided or is it
+
+# get.url = https://wikipedia.com
+
+# then we read the text
+# url.parser
+
+# find(title)
+
+# from url get text and dump it into a .json
+
+# okei, so my ai is giving me shit that i'm doing too much for v1, which is fair.
+SO whats the verdict for v1
+
+V1:
+Sites: 2 Reuters and Business tech
+Data points: Title. Publication date and Summary
+Triggers: Funding,Nanotech, Biotech, AGI,Climate tech/Climate Engineering
+Output Structures: Title, Date, Summary
+
+We're gonna use classes for each site, one for Reuters and one for Business tech
+since each site is shaped uniquely so differnt classes will have diffent behaviours on how
+they handle they fetch, parse and store data. but most specifically how they parse
+fet is same and store is same
+
+Scope:
+no emails, no sentiment, runs once daily
