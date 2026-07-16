@@ -67,9 +67,9 @@ SO whats the verdict for v1
 
 V1:
 Sites: 2 Reuters and Business tech
-Data points: Title. Publication date and Summary
-Triggers: Funding,Nanotech, Biotech, AGI,Climate tech/Climate Engineering
-Output Structures: Title, Date, Summary
+Data points: Title, Publication date, Article body
+Triggers: Funding,Nanotech, Biotech, AGI,Climate Tech/Climate Engineering
+Output Structures: Title, Publication Date, Company, Topic, Summary, Url
 
 We're gonna use classes for each site, one for Reuters and one for Business tech
 since each site is shaped uniquely so differnt classes will have diffent behaviours on how
